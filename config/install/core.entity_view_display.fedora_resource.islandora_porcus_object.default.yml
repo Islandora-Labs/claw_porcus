@@ -1,0 +1,49 @@
+uuid: 0c6afe29-60d5-4405-b8d9-af674d12bf59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.fedora_resource.islandora_porcus_object.field_description
+    - field.field.fedora_resource.islandora_porcus_object.field_porcus_text
+    - islandora.fedora_resource_type.islandora_porcus_object
+  module:
+    - user
+  enforced:
+    module:
+      - islandora_porcus
+id: fedora_resource.islandora_porcus_object.default
+targetEntityType: fedora_resource
+bundle: islandora_porcus_object
+mode: default
+content:
+  field_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_porcus_text:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

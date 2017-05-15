@@ -1,0 +1,48 @@
+uuid: c29c21a5-05b3-43b8-9987-b9aadd1b05cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.porcus_text.field_file
+    - media_entity.bundle.porcus_text
+  module:
+    - file
+  enforced:
+    module:
+      - islandora_porcus
+id: media.porcus_text.default
+targetEntityType: media
+bundle: porcus_text
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_file:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

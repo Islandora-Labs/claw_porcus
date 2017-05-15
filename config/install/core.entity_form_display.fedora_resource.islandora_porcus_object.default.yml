@@ -1,0 +1,77 @@
+uuid: 3570df24-4358-4d37-8f94-3309afab62a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.fedora_resource.islandora_porcus_object.field_description
+    - field.field.fedora_resource.islandora_porcus_object.field_porcus_text
+    - islandora.fedora_resource_type.islandora_porcus_object
+  module:
+    - inline_entity_form
+  enforced:
+    module:
+      - islandora_porcus
+id: fedora_resource.islandora_porcus_object.default
+targetEntityType: fedora_resource
+bundle: islandora_porcus_object
+mode: default
+content:
+  field_description:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_porcus_text:
+    weight: 6
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_existing: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }
