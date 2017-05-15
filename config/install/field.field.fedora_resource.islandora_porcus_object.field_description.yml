@@ -1,0 +1,22 @@
+uuid: b3f64e5b-c6f8-4217-aaca-0c9c7b2e32d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.fedora_resource.field_description
+    - islandora.fedora_resource_type.islandora_porcus_object
+  enforced:
+    module:
+      - islandora_porcus
+id: fedora_resource.islandora_porcus_object.field_description
+field_name: field_description
+entity_type: fedora_resource
+bundle: islandora_porcus_object
+label: description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long
