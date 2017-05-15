@@ -1,0 +1,42 @@
+uuid: 1daa6e25-2e46-4148-afd7-117482e8da4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - islandora.fedora_resource_type.islandora_porcus_object
+  enforced:
+    module:
+      - islandora_porcus
+  module:
+    - islandora
+id: fedora_resource.islandora_porcus_object
+targetEntityType: fedora_resource
+bundle: islandora_porcus_object
+types:
+  - 'pcdm:Object'
+  - 'islandora:PorcusObject'
+fieldMappings:
+  field_description:
+    properties:
+      - 'dc:description'
+  name:
+    properties:
+      - 'dc:title'
+  created:
+    properties:
+      - 'schema:dateCreated'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel
+  field_porcus_text:
+    properties:
+      - 'pcdm:hasFile'
+    mapping_type: rel

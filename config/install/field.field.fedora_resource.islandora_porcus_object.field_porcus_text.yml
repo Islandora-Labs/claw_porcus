@@ -1,0 +1,32 @@
+uuid: e5f624e5-57ee-4a4f-a260-91ccfaffd157
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.fedora_resource.field_porcus_text
+    - islandora.fedora_resource_type.islandora_porcus_object
+    - media_entity.bundle.porcus_text
+  enforced:
+    module:
+      - islandora_porcus
+id: fedora_resource.islandora_porcus_object.field_porcus_text
+field_name: field_porcus_text
+entity_type: fedora_resource
+bundle: islandora_porcus_object
+label: porcus_text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      porcus_text: porcus_text
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
+

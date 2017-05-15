@@ -1,0 +1,14 @@
+{
+  "name": "drupal/islandora_porcus",
+  "type": "drupal-module",
+  "description": "Islanodra Porcus",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/islandora_porcus",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/islandora_porcus",
+    "source": "http://cgit.drupalcode.org/islandora_porcus"
+  },
+  "require": { }
+}

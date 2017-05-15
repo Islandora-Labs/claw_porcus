@@ -1,0 +1,23 @@
+uuid: 7b0d459a-d987-4bbe-a5a9-b8f73f25f011
+langcode: en
+status: true
+dependencies:
+  module:
+    - islandora
+    - media_entity
+  enforced:
+    module:
+      - islandora_porcus
+id: fedora_resource.field_porcus_text
+field_name: field_porcus_text
+entity_type: fedora_resource
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

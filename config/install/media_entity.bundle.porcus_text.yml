@@ -1,0 +1,15 @@
+uuid: 49346fc5-9b68-434b-8360-6ec12c806bec
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_porcus
+id: porcus_text
+label: PORCUS_TEXT
+description: 'Holds some porcus text.'
+type: generic
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration: {  }
+field_map: {  }

@@ -1,0 +1,39 @@
+uuid: 9988c839-0873-4b4d-bd8f-994786284768
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.porcus_text
+  module:
+    - media_entity
+  enforced:
+    module:
+      - islandora_porcus
+id: media.porcus_text
+targetEntityType: media
+bundle: porcus_text
+types:
+  - 'use:ServiceFile'
+fieldMappings:
+  name:
+    properties:
+      - 'dc:title'
+      - 'rdf:label'
+  field_file:
+    properties:
+      - 'iana:describes'
+    mapping_type: rel
+  created:
+    properties:
+      - 'schema:dateCreated'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel

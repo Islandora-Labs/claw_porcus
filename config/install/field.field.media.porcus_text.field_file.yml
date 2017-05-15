@@ -1,0 +1,30 @@
+uuid: 97f9cdd9-2889-4032-b7c5-29924f93c1ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_file
+    - media_entity.bundle.porcus_text
+  module:
+    - file
+  enforced:
+    module:
+      - islandora_porcus
+id: media.porcus_text.field_file
+field_name: field_file
+entity_type: media
+bundle: porcus_text
+label: File
+description: 'Holds some text that might get converted to pig latin'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: txt
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

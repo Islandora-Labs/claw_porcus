@@ -1,0 +1,9 @@
+uuid: b5f7d7ad-ef0b-459e-9a12-75a9f34100b2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - islandora_porcus
+id: islandora_porcus_object
+label: 'Islandora Porcus Object'
