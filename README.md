@@ -87,7 +87,7 @@ ubuntu@claw:/var/www/html/drupal$
 * Select 'Configuration type' RDF mapping and import the mapping
 * Repeat it for the other bundle
 
-### 5 - Exporting and modifing configuration
+### 5 - Export and modify the configuration
 * Export the following configuration types for items relevant to the porcus bundles and fields:
     * Fedora resource type 
     * Media bundle 
