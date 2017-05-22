@@ -88,7 +88,7 @@ ubuntu@claw:/var/www/html/drupal$
 * Repeat it for the other bundle
 
 ### 5 - Exporting and modifing configuration
-* Export the following configuration types:
+* Export the following configuration types for items relevant to the porcus bundles and fields:
     * Fedora resource type 
     * Media bundle 
     * Field 
