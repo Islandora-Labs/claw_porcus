@@ -21,7 +21,7 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 * Go to Manage form display: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/form-display`
 * Specify the porcus_text WIDGET as Inline entity form - complex
 
-### 3 - Creating a module using Drupal console
+### 3 - Create a module using Drupal console
 * ssh into the vagrant `vagrant ssh`
 * Go to drupal console and execute command to create a module `ubuntu@claw:/var/www/html/drupal$ drupal generate:module`
 * Execute the interactive commands as below:
@@ -80,6 +80,8 @@ Generated or updated files
  3 - /var/www/html/drupal/web/modules/contrib/islandora_porcus/composer.json
 ubuntu@claw:/var/www/html/drupal$ 
 ```
+
+The newly created module can be found at `/var/www/html/drupal/web/modules/contrib/islandora_porcus`
 
 ### 4 - Create RDF Mapping for the bunldes (islandora_porcus_object and PORCUS_TEXT)
 * Adopt and modify an existing RDF Mapping such as `https://github.com/Islandora-CLAW/islandora_image/blob/8.x-1.x/config/install/rdf.mapping.fedora_resource.islandora_image.yml` to create the RDF mapping of the target bundle
