@@ -6,7 +6,7 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 ### 1 - Create a new Media bundle
 * Go to `/admin/structure/media/add`
 * Provide a label to the bundle: PORCUS_TEXT
-* Lave the type provider as Generic media
+* Leave the type provider as Generic media
 * Go to the Manage fields of the new media bundle: `/admin/structure/media/manage/porcus_text/fields`
 * Add a new file field
 
