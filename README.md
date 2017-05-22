@@ -3,14 +3,14 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 
 
 ## Steps to create claw_porcus
-### 1 - Create a new Media Bundle
+### 1 - Create a new Media bundle
 * Go to `/admin/structure/media/add`
 * Provide a label to the bundle: PORCUS_TEXT
 * Lave the type provier as Generic media
 * Go to the Manage fields of the new media bundle: `/admin/structure/media/manage/porcus_text/fields`
 * Add a new file field
 
-### 2 - Create a new Fedora Resource type
+### 2 - Create a new Fedora Resource type bundle
 * Go to `/admin/structure/fedora_resource_type`
 * Provide a label to the fedora resource type: Islandora Porcus Object
 * Go to Manage fields of the new fedora resource type: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/fields`
@@ -88,7 +88,7 @@ ubuntu@claw:/var/www/html/drupal$
 * Repeat it for the other bundle
 
 ### 5 - Exporting and modifing configuration
-* Export the following configuration types
+* Export the following configuration types:
     * Fedora resource type 
     * Media bundle 
     * Field 
@@ -96,6 +96,6 @@ ubuntu@claw:/var/www/html/drupal$
     * RDF mapping
     * Entity form display
     * Entity view display
-* Create an `config/install` folder and copy the above configurations into that folder
+* Create a `config/install` folder and copy the above configurations into that folder
 
 
