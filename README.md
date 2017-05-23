@@ -13,10 +13,10 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 ### 2 - Create a new Fedora Resource type bundle
 * Go to `/admin/structure/fedora_resource_type`
 * Click the *Add Fedora resource type* button to create a new Fedora resource bundle
-* Provide a label to the fedora resource type: Islandora Porcus Object
+* Provide a *Label* to the fedora resource type: Islandora Porcus Object
 * Go to *Manage fields* of the new fedora resource type: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/fields`
 * Add a new description field (Text (plain, long))
-* Add a new field with Reference type Other
+* Add a new field with *Reference type* `Other`
 * Chose *Type of item to reference* as Media
 * Select the `Default` *Reference method* and `PORCUS_TEXT` as the *Bundles*
 * Go to *Manage form* display: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/form-display`
