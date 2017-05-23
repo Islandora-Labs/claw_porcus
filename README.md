@@ -5,8 +5,8 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 ## Steps to create claw_porcus
 ### 1 - Create a new Media bundle
 * Go to `/admin/structure/media/add`
-* Provide a label to the bundle: PORCUS_TEXT
-* Leave the type provider as `Generic media`
+* Provide a *Label* to the bundle: PORCUS_TEXT
+* Leave the *Type provider* as `Generic media`
 * Go to the *Manage fields* of the new media bundle: `/admin/structure/media/manage/porcus_text/fields`
 * Add the existing `field_file` field to the bundle.
 
