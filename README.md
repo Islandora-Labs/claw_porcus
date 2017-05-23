@@ -5,7 +5,7 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 ## Steps to create claw_porcus
 ### 1 - Create a new Media bundle
 * Go to `/admin/structure/media/add`
-* Provide a *Label* to the bundle: PORCUS_TEXT
+* Provide a *Label* to the bundle: `PORCUS_TEXT`
 * Leave the *Type provider* as `Generic media`
 * Go to the *Manage fields* of the new media bundle: `/admin/structure/media/manage/porcus_text/fields`
 * Add the existing `field_file` field to the bundle.
@@ -13,7 +13,7 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 ### 2 - Create a new Fedora Resource type bundle
 * Go to `/admin/structure/fedora_resource_type`
 * Click the *Add Fedora resource type* button to create a new Fedora resource bundle
-* Provide a *Label* to the fedora resource type: Islandora Porcus Object
+* Provide a *Label* to the fedora resource type: `Islandora Porcus Object`
 * Go to *Manage fields* of the new fedora resource type: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/fields`
 * Add a new description field (Text (plain, long))
 * Add a new field with *Reference type* `Other`
