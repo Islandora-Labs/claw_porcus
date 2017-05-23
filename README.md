@@ -17,7 +17,7 @@ This is a demo module for Islandora CLAW. It illustrates the modeling of a conte
 * Go to *Manage fields* of the new fedora resource type: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/fields`
 * Add a new description field (Text (plain, long))
 * Add a new field with Reference type Other
-* Chose `Type of item to reference` as Media
+* Chose *Type of item to reference* as Media
 * Select the `Default` *Reference method* and `PORCUS_TEXT` as the *Bundles*
 * Go to *Manage form* display: `/admin/structure/fedora_resource_type/islandora_porcus_object/edit/form-display`
 * Specify the porcus_text field's *WIDGET* as `Inline entity form - complex`
